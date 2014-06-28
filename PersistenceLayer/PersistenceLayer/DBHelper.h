@@ -22,6 +22,6 @@
 - (void)initDB;
 
 // 从数据库中获得当前数据库的版本号
-- (int) dbVersionNumber;
+- (int)dbVersionNumber;
 
 @end

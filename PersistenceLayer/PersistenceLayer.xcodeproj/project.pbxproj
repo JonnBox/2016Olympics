@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C018B97195ECC7F00432024 /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C018B95195ECC7F00432024 /* BaseDAO.h */; };
+		2C018B98195ECC7F00432024 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C018B96195ECC7F00432024 /* BaseDAO.m */; };
 		2CA05F56195D783C007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F55195D783C007324D8 /* Foundation.framework */; };
 		2CA05F64195D783C007324D8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F63195D783C007324D8 /* XCTest.framework */; };
 		2CA05F65195D783C007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F55195D783C007324D8 /* Foundation.framework */; };
@@ -50,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C018B95195ECC7F00432024 /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		2C018B96195ECC7F00432024 /* BaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
 		2CA05F52195D783C007324D8 /* libPersistenceLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPersistenceLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA05F55195D783C007324D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CA05F59195D783C007324D8 /* PersistenceLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersistenceLayer-Prefix.pch"; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 		2CA05F57195D783C007324D8 /* PersistenceLayer */ = {
 			isa = PBXGroup;
 			children = (
+				2C018B95195ECC7F00432024 /* BaseDAO.h */,
+				2C018B96195ECC7F00432024 /* BaseDAO.m */,
 				2CA06080195DB2A9007324D8 /* Events.h */,
 				2CA06081195DB2A9007324D8 /* Events.m */,
 				2CA06086195DBA37007324D8 /* EventsDAO.h */,
@@ -190,6 +196,7 @@
 				2CA06092195DBFBD007324D8 /* EventsDAO.h in Headers */,
 				2CA06096195DC48D007324D8 /* DBHelper.h in Headers */,
 				2CA06093195DBFBD007324D8 /* Schedule.h in Headers */,
+				2C018B97195ECC7F00432024 /* BaseDAO.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +288,7 @@
 				2CA06088195DBA37007324D8 /* EventsDAO.m in Sources */,
 				2CA06082195DB2A9007324D8 /* Events.m in Sources */,
 				2CA06097195DC48D007324D8 /* DBHelper.m in Sources */,
+				2C018B98195ECC7F00432024 /* BaseDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
