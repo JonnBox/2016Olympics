@@ -10,7 +10,10 @@
 #import "Events.h"
 #import "BaseDAO.h"
 
+// 比赛项目 数据访问对象类
 @interface EventsDAO : BaseDAO
+
++ (EventsDAO *)sharedManager;
 
 // 插入数据的方法
 - (int)create:(Events *)model;

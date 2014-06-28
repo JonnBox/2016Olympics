@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C018B97195ECC7F00432024 /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C018B95195ECC7F00432024 /* BaseDAO.h */; };
+		2C018B97195ECC7F00432024 /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C018B95195ECC7F00432024 /* BaseDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C018B98195ECC7F00432024 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C018B96195ECC7F00432024 /* BaseDAO.m */; };
+		2C018B99195EFF8200432024 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA06098195DC4B1007324D8 /* libsqlite3.dylib */; };
 		2CA05F56195D783C007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F55195D783C007324D8 /* Foundation.framework */; };
 		2CA05F64195D783C007324D8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F63195D783C007324D8 /* XCTest.framework */; };
 		2CA05F65195D783C007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F55195D783C007324D8 /* Foundation.framework */; };
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C018B99195EFF8200432024 /* libsqlite3.dylib in Frameworks */,
 				2CA05F64195D783C007324D8 /* XCTest.framework in Frameworks */,
 				2CA05F6A195D783D007324D8 /* libPersistenceLayer.a in Frameworks */,
 				2CA05F67195D783D007324D8 /* UIKit.framework in Frameworks */,
@@ -192,11 +194,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C018B97195ECC7F00432024 /* BaseDAO.h in Headers */,
 				2CA06091195DBFBD007324D8 /* Events.h in Headers */,
 				2CA06092195DBFBD007324D8 /* EventsDAO.h in Headers */,
 				2CA06096195DC48D007324D8 /* DBHelper.h in Headers */,
 				2CA06093195DBFBD007324D8 /* Schedule.h in Headers */,
-				2C018B97195ECC7F00432024 /* BaseDAO.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

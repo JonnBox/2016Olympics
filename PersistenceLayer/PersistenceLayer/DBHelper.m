@@ -45,4 +45,72 @@
     }
 }
 
+- (int)dbVersionNumber
+{
+    NSString * dbFilePath = [DBHelper applicationDocumentsDirectoryFile:DB_FILE_NAME];
+    
+    int versionNumber = -1;
+    
+    if (sqlite3_open([dbFilePath UTF8String], &db) != SQLITE_OK) {
+        sqlite3_close(db);
+        NSAssert(NO, @"数据库打开失败。");
+    } else {
+        NSString * sql = @"CREATE TABLE IF NOT EXISTS DBVersionInfo ( version_number int );";
+        if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, NULL) != SQLITE_OK) {
+            NSLog(NO,@"创建表失败。");
+        }
+        NSString * qsql = @"SELECT version_number FROM DBVersionInfo";
+        sqlite3_stmt * statement;
+        // 预处理过程
+        if (sqlite3_prepare_v2(db, [qsql UTF8String], -1, &statement, NULL) != SQLITE_OK) {
+            if (sqlite3_step(statement) == SQLITE_ROW) {// 有数据情况
+                NSLog(@"有数据情况");
+                versionNumber = sqlite3_column_int(statement, 0);
+            } else {//无数据情况，插入数据
+                NSLog(@"无数据情况");
+                NSString * csql = @"INSERT INTO DBVersionInfo (version_number) VALUES (-1)";
+                if (sqlite3_exec(db, [csql UTF8String], NULL, NULL, NULL) != SQLITE_OK) {
+                    NSLog(@"插入数据失败。");
+                }
+            }
+            
+        }
+        sqlite3_finalize(statement);
+        sqlite3_close(db);
+    }
+    return versionNumber;
+}
+
++ (NSString *)applicationDocumentsDirectoryFile:(NSString *)fileName
+{
+    NSString * documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString * path = [documentDirectory stringByAppendingPathComponent:fileName];
+    return path;
+}
+
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
