@@ -28,13 +28,13 @@ static EventsDAO * sharedManager = nil;
         NSString * sqlStr = @"INSERT INTO Events (EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo) VALUES (?, ?, ?, ?, ?)";
         sqlite3_stmt * statement;
         // 预处理过程
-        if (sqlite3_prepare_v2(db, [sqlStr UTF8String], -1, &statement, NULL) != SQLITE_OK) {
+        if (sqlite3_prepare_v2(db, [sqlStr UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             // 绑定参数开始
             sqlite3_bind_text(statement, 1, [model.EventName UTF8String], -1, NULL);
             sqlite3_bind_text(statement, 2, [model.EventIcon UTF8String], -1, NULL);
-            sqlite3_bind_text(statement, 2, [model.EventIcon UTF8String], -1, NULL);
-            sqlite3_bind_text(statement, 2, [model.EventIcon UTF8String], -1, NULL);
-            sqlite3_bind_text(statement, 2, [model.EventIcon UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 3, [model.KeyInfo UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 4, [model.BasicsInfo UTF8String], -1, NULL);
+            sqlite3_bind_text(statement, 5, [model.OlympicInfo UTF8String], -1, NULL);
             // 执行插入
             if (sqlite3_step(statement) != SQLITE_DONE) {
                 NSAssert(NO, @"插入数据失败。");
@@ -82,7 +82,7 @@ static EventsDAO * sharedManager = nil;
         NSString * sqlStr = @"UPDATE Events SET EventName=?, EventIcon=?, KeyInfo=?, BasicsInfo=?, OlympicInfo=? WHERE EventID=?";
         sqlite3_stmt * statement;
         // 预处理过程
-        if (sqlite3_prepare_v2(db, [sqlStr UTF8String], -1, &statement, NULL) != SQLITE_OK) {
+        if (sqlite3_prepare_v2(db, [sqlStr UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             // 绑定参数开始
             sqlite3_bind_text(statement, 1, [model.EventName UTF8String], -1, NULL);
             sqlite3_bind_text(statement, 2, [model.EventIcon UTF8String], -1, NULL);
@@ -110,7 +110,7 @@ static EventsDAO * sharedManager = nil;
         NSString * qsql = @"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events";
         sqlite3_stmt * statement;
         // 预处理过程
-        if (sqlite3_prepare_v2(db, [qsql UTF8String], -1, &statement, NULL) != SQLITE_OK) {
+        if (sqlite3_prepare_v2(db, [qsql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             // 执行
             while (sqlite3_step(statement) == SQLITE_ROW) {
                 Events * events = [[Events alloc] init];
@@ -145,10 +145,10 @@ static EventsDAO * sharedManager = nil;
 - (Events *)findById:(Events *)model
 {
     if ([self openDB]) {
-        NSString * qsql = @"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlumpicInfo, EventID FROM Events WHERE EventID=?";
+        NSString * qsql = @"SELECT EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo, EventID FROM Events WHERE EventID=?";
         sqlite3_stmt * statement;
         // 预处理过程
-        if (sqlite3_prepare_v2(db, [qsql UTF8String], -1, &statement, NULL) != SQLITE_OK) {
+        if (sqlite3_prepare_v2(db, [qsql UTF8String], -1, &statement, NULL) == SQLITE_OK) {
             // 绑定参数开始
             sqlite3_bind_int(statement, 1, model.EventID);
             // 执行
@@ -156,17 +156,17 @@ static EventsDAO * sharedManager = nil;
                 Events * events = [[Events alloc] init];
                 
                 char * cEventName = (char *)sqlite3_column_text(statement, 0);
-                model.EventName = [[NSString alloc] initWithUTF8String:cEventName];
+                events.EventName = [[NSString alloc] initWithUTF8String:cEventName];
                 char * cEventIcon = (char *)sqlite3_column_text(statement, 1);
-                model.EventIcon = [[NSString alloc] initWithUTF8String:cEventIcon];
+                events.EventIcon = [[NSString alloc] initWithUTF8String:cEventIcon];
                 char * cKeyInfo = (char *)sqlite3_column_text(statement, 2);
-                model.KeyInfo = [[NSString alloc] initWithUTF8String:cKeyInfo];
+                events.KeyInfo = [[NSString alloc] initWithUTF8String:cKeyInfo];
                 char * cBasicsInfo = (char *)sqlite3_column_text(statement, 3);
-                model.BasicsInfo = [[NSString alloc] initWithUTF8String:cBasicsInfo];
+                events.BasicsInfo = [[NSString alloc] initWithUTF8String:cBasicsInfo];
                 char * cOlympicInfo = (char *)sqlite3_column_text(statement, 4);
-                model.OlympicInfo = [[NSString alloc] initWithUTF8String:cOlympicInfo];
+                events.OlympicInfo = [[NSString alloc] initWithUTF8String:cOlympicInfo];
                 
-                model.EventID = sqlite3_column_int(statement, 5);
+                events.EventID = sqlite3_column_int(statement, 5);
                 
                 sqlite3_finalize(statement);
                 sqlite3_close(db);

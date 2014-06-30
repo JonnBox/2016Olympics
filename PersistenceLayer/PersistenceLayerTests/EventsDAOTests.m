@@ -8,7 +8,6 @@
 
 #import "EventsDAO.h"
 #import "Events.h"
-#import "DBHelper.h"
 
 #import <XCTest/XCTest.h>
 
