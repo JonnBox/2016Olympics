@@ -1,13 +1,13 @@
 //
-//  ViewController.h
+//  HomeViewController.h
 //  2016Olympics
 //
-//  Created by 李振 on 14-6-27.
+//  Created by 李振 on 14-7-2.
 //  Copyright (c) 2014年 Lee Zhen. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HomeViewController : UIViewController
 
 @end

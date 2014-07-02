@@ -1,36 +1,392 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Owp-Kk-lBX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Home View Controller - Home-->
+        <scene sceneID="3dF-fs-zmk">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="XwY-R6-bLE" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="3n2-Fl-eQ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="BR9-rn-SWa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="6bJ-Ah-FDr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXu-gG-M5v">
-                                <rect key="frame" x="139" y="225" width="42" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Home-bg" translatesAutoresizingMaskIntoConstraints="NO" id="l0z-mU-yxo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-TabBarIcon" id="ief-Di-SUg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCg-AW-4X9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338" y="-108"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Zsu-wW-4gj">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="Owp-Kk-lBX" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="GZq-cT-dPA">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XwY-R6-bLE" kind="relationship" relationship="viewControllers" id="X5Z-km-KCh"/>
+                        <segue destination="WX3-KQ-RQl" kind="relationship" relationship="viewControllers" id="QS2-NX-NaG"/>
+                        <segue destination="XaT-Ew-chu" kind="relationship" relationship="viewControllers" id="EQw-0H-e3w"/>
+                        <segue destination="I5C-fa-oI2" kind="relationship" relationship="viewControllers" id="uA5-wM-W3q"/>
+                        <segue destination="dc3-1D-ycf" kind="relationship" relationship="viewControllers" id="RV0-K6-hIC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8aT-Oq-DtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1019" y="740"/>
+        </scene>
+        <!--Count Down View Controller - Count Down-->
+        <scene sceneID="xDO-qT-OtU">
+            <objects>
+                <viewController id="I5C-fa-oI2" customClass="CountDownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sgp-Tj-UPR"/>
+                        <viewControllerLayoutGuide type="bottom" id="UYQ-DU-YYd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gWp-oC-nEp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CountDown-bg" translatesAutoresizingMaskIntoConstraints="NO" id="ko5-AO-Rk2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="IS7-6m-eya">
+                                <rect key="frame" x="33" y="100" width="267" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Count Down" image="CountDown-TabBarIcon" id="P6r-rY-5VE"/>
+                    <connections>
+                        <outlet property="lblCountDown" destination="IS7-6m-eya" id="VNZ-Hu-FVK"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWP-lI-d5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="351" y="2032"/>
+        </scene>
+        <!--About View Controller - About-->
+        <scene sceneID="j9a-m6-jtX">
+            <objects>
+                <viewController id="dc3-1D-ycf" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xAj-i6-W53"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9j-cs-RmB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DDM-h1-ose">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="About-bg" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-JF-acA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="About-TabBarIcon" id="Gtm-YZ-tqa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Gk-nw-hXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-453" y="1932"/>
+        </scene>
+        <!--Schedule View Controller - Schedule-->
+        <scene sceneID="ECz-sb-w4w">
+            <objects>
+                <tableViewController id="HUG-iH-FLz" customClass="ScheduleViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Mo-Oc-1v5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="eaL-lH-Kif" detailTextLabel="qvl-0K-OoW" style="IBUITableViewCellStyleSubtitle" id="NIR-nt-ePn">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NIR-nt-ePn" id="VRX-5G-6eB">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eaL-lH-Kif">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qvl-0K-OoW">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HUG-iH-FLz" id="eEb-md-aav"/>
+                            <outlet property="delegate" destination="HUG-iH-FLz" id="Uak-W3-0VA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="29a-hH-g9k"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6t-TB-JKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="1192"/>
+        </scene>
+        <!--Events View Controller - Events-->
+        <scene sceneID="b8l-6E-cLS">
+            <objects>
+                <viewController id="N2o-qR-GDM" customClass="EventsViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="n1F-Ep-GxU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="f3q-Lm-ndo">
+                            <size key="itemSize" width="102" height="103"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="51" minY="10" maxX="51" maxY="5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="FT5-b8-Smm" customClass="EventsViewCell">
+                                <rect key="frame" x="51" y="74" width="102" height="102"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="archery.gif" translatesAutoresizingMaskIntoConstraints="NO" id="313-oI-uLY">
+                                            <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <size key="customSize" width="102" height="102"/>
+                                <connections>
+                                    <outlet property="imageView" destination="313-oI-uLY" id="inB-iv-krq"/>
+                                    <segue destination="dCN-8X-be0" kind="push" identifier="showDetail" id="P6Z-uM-bjr"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Events" id="OYa-T1-udF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcc-1R-pFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="175"/>
+        </scene>
+        <!--Navigation Controller - Events-->
+        <scene sceneID="ful-r4-bWM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WX3-KQ-RQl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="Events-TabBarIcon" id="JeJ-Xq-ILg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UNm-uQ-NDy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N2o-qR-GDM" kind="relationship" relationship="rootViewController" id="CHe-Fq-k1F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52F-r2-8tP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="175"/>
+        </scene>
+        <!--Navigation Controller - Schedule-->
+        <scene sceneID="8su-1y-Pvb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XaT-Ew-chu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="Schedule-TabBarIcon" id="hfs-ez-kza"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xd4-X3-apc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HUG-iH-FLz" kind="relationship" relationship="rootViewController" id="bZB-nh-fyH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfR-5h-BO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="1172"/>
+        </scene>
+        <!--Events Detail View Controller - Events Detail-->
+        <scene sceneID="D4T-vF-55T">
+            <objects>
+                <viewController id="dCN-8X-be0" customClass="EventsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kiz-sf-fLe"/>
+                        <viewControllerLayoutGuide type="bottom" id="XPs-Xy-zb6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sZv-Na-cL5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FV-IH-b7Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="archery.gif" translatesAutoresizingMaskIntoConstraints="NO" id="iry-yE-m0z">
+                                        <rect key="frame" x="36" y="78" width="101" height="101"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="101" id="fGr-Sr-s6f"/>
+                                            <constraint firstAttribute="width" constant="101" id="rma-1n-2aH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Archery" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="20" preferredMaxLayoutWidth="172" translatesAutoresizingMaskIntoConstraints="NO" id="Gka-JB-zI7">
+                                        <rect key="frame" x="155" y="152" width="172" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.51554528060000004" green="0.51554528060000004" blue="0.51554528060000004" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="172" id="Coq-b0-DnB"/>
+                                            <constraint firstAttribute="height" constant="45" id="hKj-rs-87v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyb-qn-eXo">
+                                        <rect key="frame" x="28" y="196" width="250" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="eGe-MD-ckl"/>
+                                        </constraints>
+                                        <string key="text">The object of the sport is simple: to shoot arrows as close to the centre of a target as possible. Olympic Archery targets are 122 centimetres in diameter, with the gold ring at the centre (worth a maximum 10 points) measuring just 12.2cm. Archers shoot at the target from a distance of 70 metres. At the Olympic Games, the two individual Archery competitions (one for men, one for women) will be played in a knockout format. Matches will be played over the best of five sets, with each set consisting of three arrows per archer. The winners of each match will qualify for the next round, until the last two archers go head to head in the gold medal match. A knockout format will also be used for the men’s and women’s team competitions, which features teams of three archers competing against each other in a best-of-24-arrows format.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-fG-uNH">
+                                        <rect key="frame" x="32" y="695" width="250" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.97510601649999995" blue="0.96406502660000004" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="6HN-du-Ibd"/>
+                                        </constraints>
+                                        <string key="text">Archery dates back around 10,000 years, when bows and arrows were first used for hunting and warfare, before it developed as a competitive activity in medieval England. A tense and testing sport that requires immense reserves of skill and nerve, Archery is now practised in more than 140 countries around the world.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="git-UR-H0w">
+                                        <rect key="frame" x="30" y="444" width="237" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Zmi-0A-UQY"/>
+                                        </constraints>
+                                        <string key="text">Archery made its Olympic debut at Paris 1900, was dropped from the programme after the 1908 Games, and then returned for a single appearance in 1920. After a 52-year gap, the sport was reintroduced at Munich 1972 and has remained on the Olympic programme ever since. For London 2012, the Archery competition will connect the old with the new at Lord’s Cricket Ground. During the knockout phase, archers will shoot from in front of the 19th-century Pavilion across the hallowed cricket square towards the modern Media Centre.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Olympic past and present" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="18" preferredMaxLayoutWidth="272" translatesAutoresizingMaskIntoConstraints="NO" id="AyD-iZ-dy8">
+                                        <rect key="frame" x="36" y="651" width="272" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="hsy-c9-kGK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The basics" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHM-Ht-OWj">
+                                        <rect key="frame" x="38" y="423" width="100" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Ht6-Gf-HjJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iry-yE-m0z" firstAttribute="leading" secondItem="AyD-iZ-dy8" secondAttribute="leading" id="2e1-ib-qU7"/>
+                                    <constraint firstAttribute="trailing" secondItem="git-UR-H0w" secondAttribute="trailing" constant="53" id="8OB-s3-ZpA"/>
+                                    <constraint firstItem="jHM-Ht-OWj" firstAttribute="leading" secondItem="7FV-IH-b7Y" secondAttribute="leading" constant="38" id="Aqa-1J-wbe"/>
+                                    <constraint firstItem="Gka-JB-zI7" firstAttribute="top" secondItem="7FV-IH-b7Y" secondAttribute="top" constant="152" id="Cd4-Ta-yrx"/>
+                                    <constraint firstItem="iry-yE-m0z" firstAttribute="leading" secondItem="7FV-IH-b7Y" secondAttribute="leading" constant="36" id="G3D-dF-RaU"/>
+                                    <constraint firstItem="Gka-JB-zI7" firstAttribute="leading" secondItem="iry-yE-m0z" secondAttribute="trailing" constant="18" id="HHI-ft-lzi"/>
+                                    <constraint firstItem="iry-yE-m0z" firstAttribute="top" secondItem="7FV-IH-b7Y" secondAttribute="top" constant="78" id="JBk-ue-tvv"/>
+                                    <constraint firstItem="Nme-fG-uNH" firstAttribute="leading" secondItem="7FV-IH-b7Y" secondAttribute="leading" constant="32" id="PzA-jk-pPC"/>
+                                    <constraint firstItem="git-UR-H0w" firstAttribute="leading" secondItem="7FV-IH-b7Y" secondAttribute="leading" constant="30" id="SMD-X6-C5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gka-JB-zI7" secondAttribute="trailing" constant="-7" id="Tes-tU-tG1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nme-fG-uNH" secondAttribute="bottom" constant="175" id="WEL-IR-vRw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nme-fG-uNH" secondAttribute="trailing" constant="38" id="baO-2h-iWM"/>
+                                    <constraint firstItem="jHM-Ht-OWj" firstAttribute="top" secondItem="Zyb-qn-eXo" secondAttribute="bottom" constant="27" id="ecU-Gq-Onb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zyb-qn-eXo" secondAttribute="trailing" constant="42" id="gRy-se-Zpe"/>
+                                    <constraint firstItem="Nme-fG-uNH" firstAttribute="top" secondItem="git-UR-H0w" secondAttribute="bottom" constant="51" id="jUO-tc-fcj"/>
+                                    <constraint firstAttribute="trailing" secondItem="AyD-iZ-dy8" secondAttribute="trailing" constant="12" id="joJ-mf-9pr"/>
+                                    <constraint firstItem="Zyb-qn-eXo" firstAttribute="top" secondItem="iry-yE-m0z" secondAttribute="bottom" constant="17" id="lDg-sE-PG4"/>
+                                    <constraint firstItem="Zyb-qn-eXo" firstAttribute="leading" secondItem="7FV-IH-b7Y" secondAttribute="leading" constant="28" id="oxg-d2-kO9"/>
+                                    <constraint firstItem="AyD-iZ-dy8" firstAttribute="top" secondItem="git-UR-H0w" secondAttribute="bottom" constant="7" id="p8a-rF-kmo"/>
+                                    <constraint firstItem="git-UR-H0w" firstAttribute="top" secondItem="Zyb-qn-eXo" secondAttribute="bottom" constant="48" id="vdx-Ad-1UF"/>
+                                </constraints>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="-500" maxX="0.0" maxY="0.0"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7FV-IH-b7Y" firstAttribute="top" secondItem="sZv-Na-cL5" secondAttribute="top" id="COf-jA-ywh"/>
+                            <constraint firstAttribute="trailing" secondItem="7FV-IH-b7Y" secondAttribute="trailing" id="D7n-gK-D4s"/>
+                            <constraint firstAttribute="bottom" secondItem="7FV-IH-b7Y" secondAttribute="bottom" id="GKm-yw-7KC"/>
+                            <constraint firstItem="7FV-IH-b7Y" firstAttribute="leading" secondItem="sZv-Na-cL5" secondAttribute="leading" id="Tfr-nY-Hgf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events Detail" id="j05-mz-6da"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1000"/>
+                    <connections>
+                        <outlet property="imgEventIcon" destination="iry-yE-m0z" id="6fa-Aq-S87"/>
+                        <outlet property="lblEventName" destination="Gka-JB-zI7" id="2Bb-E7-eEw"/>
+                        <outlet property="scrollView" destination="7FV-IH-b7Y" id="JfS-SB-gVW"/>
+                        <outlet property="txtViewBasicsInfo" destination="Nme-fG-uNH" id="xCf-JZ-YMf"/>
+                        <outlet property="txtViewKeyInfo" destination="Zyb-qn-eXo" id="Az0-D1-oNm"/>
+                        <outlet property="txtViewOlympicInfo" destination="git-UR-H0w" id="cRF-EW-a1T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrk-LU-Fqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="About-TabBarIcon" width="30" height="30"/>
+        <image name="About-bg" width="320" height="480"/>
+        <image name="CountDown-TabBarIcon" width="30" height="30"/>
+        <image name="CountDown-bg" width="320" height="480"/>
+        <image name="Events-TabBarIcon" width="30" height="30"/>
+        <image name="Home-TabBarIcon" width="30" height="30"/>
+        <image name="Home-bg" width="320" height="480"/>
+        <image name="Schedule-TabBarIcon" width="30" height="30"/>
+        <image name="archery.gif" width="108" height="108"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
