@@ -12,12 +12,13 @@
 		2C018B99195EFF8200432024 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA06098195DC4B1007324D8 /* libsqlite3.dylib */; };
 		2C0B06041961093300727831 /* ScheduleDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0B06031961093300727831 /* ScheduleDAOTests.m */; };
 		2C0B06051961097200727831 /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AD917195FC10B005281F6 /* ScheduleDAO.m */; };
+		2C46DD971962766300AE095A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA06098195DC4B1007324D8 /* libsqlite3.dylib */; };
 		2C4AD911195FAECF005281F6 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C018B96195ECC7F00432024 /* BaseDAO.m */; };
 		2C4AD912195FAED5005281F6 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06081195DB2A9007324D8 /* Events.m */; };
 		2C4AD913195FAED7005281F6 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06087195DBA37007324D8 /* EventsDAO.m */; };
 		2C4AD914195FAEDC005281F6 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06095195DC48D007324D8 /* DBHelper.m */; };
 		2C4AD915195FB0D3005281F6 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06084195DB3BB007324D8 /* Schedule.m */; };
-		2C4AD918195FC10B005281F6 /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4AD916195FC10B005281F6 /* ScheduleDAO.h */; };
+		2C4AD918195FC10B005281F6 /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4AD916195FC10B005281F6 /* ScheduleDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C4AD919195FC10B005281F6 /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4AD917195FC10B005281F6 /* ScheduleDAO.m */; };
 		2CA05F56195D783C007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F55195D783C007324D8 /* Foundation.framework */; };
 		2CA05F64195D783C007324D8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F63195D783C007324D8 /* XCTest.framework */; };
@@ -93,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C46DD971962766300AE095A /* libsqlite3.dylib in Frameworks */,
 				2CA05F56195D783C007324D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C46DD861962723000AE095A /* EventsBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD851962723000AE095A /* EventsBLTests.m */; };
+		2C46DD881962726000AE095A /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD871962726000AE095A /* ScheduleBLTests.m */; };
+		2C46DD8B1962728C00AE095A /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD8A1962728C00AE095A /* EventsBL.m */; };
+		2C46DD8E1962729C00AE095A /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD8D1962729C00AE095A /* ScheduleBL.m */; };
+		2C46DD931962761800AE095A /* EventsBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C46DD891962728C00AE095A /* EventsBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C46DD941962761800AE095A /* ScheduleBL.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C46DD8C1962729C00AE095A /* ScheduleBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C743ACB1963CC4C002BA508 /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD8A1962728C00AE095A /* EventsBL.m */; };
+		2C743ACC1963CC4F002BA508 /* ScheduleBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD8D1962729C00AE095A /* ScheduleBL.m */; };
+		2C743ACE1963CE3A002BA508 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C743ACD1963CE3A002BA508 /* libsqlite3.dylib */; };
 		2CA05F88195D787B007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F87195D787B007324D8 /* Foundation.framework */; };
-		2CA05F8D195D787B007324D8 /* BusinessLogicLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CA05F8C195D787B007324D8 /* BusinessLogicLayer.h */; };
-		2CA05F8F195D787B007324D8 /* BusinessLogicLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA05F8E195D787B007324D8 /* BusinessLogicLayer.m */; };
 		2CA05F96195D787B007324D8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F95195D787B007324D8 /* XCTest.framework */; };
 		2CA05F97195D787B007324D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F87195D787B007324D8 /* Foundation.framework */; };
 		2CA05F99195D787B007324D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F98195D787B007324D8 /* UIKit.framework */; };
 		2CA05F9C195D787B007324D8 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F84195D787B007324D8 /* libBusinessLogicLayer.a */; };
 		2CA05FA2195D787B007324D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA05FA0195D787B007324D8 /* InfoPlist.strings */; };
-		2CA05FA4195D787B007324D8 /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA05FA3195D787B007324D8 /* BusinessLogicLayerTests.m */; };
 		2CA05FF2195D7909007324D8 /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */; };
 /* End PBXBuildFile section */
 
@@ -36,24 +42,27 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				2CA05F8D195D787B007324D8 /* BusinessLogicLayer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C46DD851962723000AE095A /* EventsBLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBLTests.m; sourceTree = "<group>"; };
+		2C46DD871962726000AE095A /* ScheduleBLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBLTests.m; sourceTree = "<group>"; };
+		2C46DD891962728C00AE095A /* EventsBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsBL.h; sourceTree = "<group>"; };
+		2C46DD8A1962728C00AE095A /* EventsBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsBL.m; sourceTree = "<group>"; };
+		2C46DD8C1962729C00AE095A /* ScheduleBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleBL.h; sourceTree = "<group>"; };
+		2C46DD8D1962729C00AE095A /* ScheduleBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleBL.m; sourceTree = "<group>"; };
+		2C743ACD1963CE3A002BA508 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2CA05F84195D787B007324D8 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBusinessLogicLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA05F87195D787B007324D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CA05F8B195D787B007324D8 /* BusinessLogicLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusinessLogicLayer-Prefix.pch"; sourceTree = "<group>"; };
-		2CA05F8C195D787B007324D8 /* BusinessLogicLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLogicLayer.h; sourceTree = "<group>"; };
-		2CA05F8E195D787B007324D8 /* BusinessLogicLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLogicLayer.m; sourceTree = "<group>"; };
 		2CA05F94195D787B007324D8 /* BusinessLogicLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA05F95195D787B007324D8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2CA05F98195D787B007324D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2CA05F9F195D787B007324D8 /* BusinessLogicLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusinessLogicLayerTests-Info.plist"; sourceTree = "<group>"; };
 		2CA05FA1195D787B007324D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2CA05FA3195D787B007324D8 /* BusinessLogicLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLogicLayerTests.m; sourceTree = "<group>"; };
 		2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../PersistenceLayer/build/Debug-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C743ACE1963CE3A002BA508 /* libsqlite3.dylib in Frameworks */,
 				2CA05F9C195D787B007324D8 /* libBusinessLogicLayer.a in Frameworks */,
 				2CA05F96195D787B007324D8 /* XCTest.framework in Frameworks */,
 				2CA05F99195D787B007324D8 /* UIKit.framework in Frameworks */,
@@ -103,6 +113,7 @@
 		2CA05F86195D787B007324D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C743ACD1963CE3A002BA508 /* libsqlite3.dylib */,
 				2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */,
 				2CA05F87195D787B007324D8 /* Foundation.framework */,
 				2CA05F95195D787B007324D8 /* XCTest.framework */,
@@ -114,8 +125,10 @@
 		2CA05F89195D787B007324D8 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
-				2CA05F8C195D787B007324D8 /* BusinessLogicLayer.h */,
-				2CA05F8E195D787B007324D8 /* BusinessLogicLayer.m */,
+				2C46DD891962728C00AE095A /* EventsBL.h */,
+				2C46DD8A1962728C00AE095A /* EventsBL.m */,
+				2C46DD8C1962729C00AE095A /* ScheduleBL.h */,
+				2C46DD8D1962729C00AE095A /* ScheduleBL.m */,
 				2CA05F8A195D787B007324D8 /* Supporting Files */,
 			);
 			path = BusinessLogicLayer;
@@ -132,7 +145,8 @@
 		2CA05F9D195D787B007324D8 /* BusinessLogicLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CA05FA3195D787B007324D8 /* BusinessLogicLayerTests.m */,
+				2C46DD851962723000AE095A /* EventsBLTests.m */,
+				2C46DD871962726000AE095A /* ScheduleBLTests.m */,
 				2CA05F9E195D787B007324D8 /* Supporting Files */,
 			);
 			path = BusinessLogicLayerTests;
@@ -149,6 +163,18 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2C46DD921962760A00AE095A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C46DD931962761800AE095A /* EventsBL.h in Headers */,
+				2C46DD941962761800AE095A /* ScheduleBL.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		2CA05F83195D787B007324D8 /* BusinessLogicLayer */ = {
 			isa = PBXNativeTarget;
@@ -157,6 +183,7 @@
 				2CA05F80195D787B007324D8 /* Sources */,
 				2CA05F81195D787B007324D8 /* Frameworks */,
 				2CA05F82195D787B007324D8 /* CopyFiles */,
+				2C46DD921962760A00AE095A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -228,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA05F8F195D787B007324D8 /* BusinessLogicLayer.m in Sources */,
+				2C46DD8E1962729C00AE095A /* ScheduleBL.m in Sources */,
+				2C46DD8B1962728C00AE095A /* EventsBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA05FA4195D787B007324D8 /* BusinessLogicLayerTests.m in Sources */,
+				2C46DD881962726000AE095A /* ScheduleBLTests.m in Sources */,
+				2C743ACB1963CC4C002BA508 /* EventsBL.m in Sources */,
+				2C743ACC1963CC4F002BA508 /* ScheduleBL.m in Sources */,
+				2C46DD861962723000AE095A /* EventsBLTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +410,13 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BusinessLogicLayerTests/BusinessLogicLayerTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-bstkbydzamsfnngdubooyepqjhqn/Build/Products/Debug-iphoneos",
+					"/Users/leezhen/Projects/2016Olympics/PersistenceLayer/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -395,7 +432,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BusinessLogicLayer/BusinessLogicLayer-Prefix.pch";
 				INFOPLIST_FILE = "BusinessLogicLayerTests/BusinessLogicLayerTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/2016Olympics-bstkbydzamsfnngdubooyepqjhqn/Build/Products/Debug-iphoneos",
+					"/Users/leezhen/Projects/2016Olympics/PersistenceLayer/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
