@@ -68,6 +68,12 @@
 		2CA05FE6195D78CC007324D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA05FE4195D78CC007324D8 /* InfoPlist.strings */; };
 		2CA05FE8195D78CC007324D8 /* _016OlympicsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA05FE7195D78CC007324D8 /* _016OlympicsTests.m */; };
 		2CA05FF4195D7922007324D8 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05FF3195D7922007324D8 /* libBusinessLogicLayer.a */; };
+		2CC486F81964F56300194EF5 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC486F71964F56300194EF5 /* ScheduleViewController.m */; };
+		2CC486FB1964FA5D00194EF5 /* CountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC486FA1964FA5D00194EF5 /* CountDownViewController.m */; };
+		2CC486FE1964FF9400194EF5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC486FD1964FF9400194EF5 /* AboutViewController.m */; };
+		2CC487001965011C00194EF5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC486FF1965011C00194EF5 /* libsqlite3.dylib */; };
+		2CC4871819650B6000194EF5 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4871619650B6000194EF5 /* create_load.sql */; };
+		2CC4871919650B6000194EF5 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4871719650B6000194EF5 /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +156,15 @@
 		2CA05FE5195D78CC007324D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CA05FE7195D78CC007324D8 /* _016OlympicsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _016OlympicsTests.m; sourceTree = "<group>"; };
 		2CA05FF3195D7922007324D8 /* libBusinessLogicLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBusinessLogicLayer.a; path = "../BusinessLogicLayer/build/Debug-iphoneos/libBusinessLogicLayer.a"; sourceTree = "<group>"; };
+		2CC486F61964F56300194EF5 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		2CC486F71964F56300194EF5 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		2CC486F91964FA5D00194EF5 /* CountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownViewController.h; sourceTree = "<group>"; };
+		2CC486FA1964FA5D00194EF5 /* CountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownViewController.m; sourceTree = "<group>"; };
+		2CC486FC1964FF9400194EF5 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2CC486FD1964FF9400194EF5 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2CC486FF1965011C00194EF5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2CC4871619650B6000194EF5 /* create_load.sql */ = {isa = PBXFileReference; lastKnownFileType = text; name = create_load.sql; path = ../DBFile/create_load.sql; sourceTree = "<group>"; };
+		2CC4871719650B6000194EF5 /* DBConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DBConfig.plist; path = ../DBFile/DBConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC487001965011C00194EF5 /* libsqlite3.dylib in Frameworks */,
 				2CA05FF4195D7922007324D8 /* libBusinessLogicLayer.a in Frameworks */,
 				2CA05FBC195D78CC007324D8 /* CoreGraphics.framework in Frameworks */,
 				2CA05FBE195D78CC007324D8 /* UIKit.framework in Frameworks */,
@@ -230,6 +246,8 @@
 		2CA05FAD195D78CC007324D8 = {
 			isa = PBXGroup;
 			children = (
+				2CC4871619650B6000194EF5 /* create_load.sql */,
+				2CC4871719650B6000194EF5 /* DBConfig.plist */,
 				2CA05FBF195D78CC007324D8 /* 2016Olympics */,
 				2CA05FE1195D78CC007324D8 /* 2016OlympicsTests */,
 				2CA05FB8195D78CC007324D8 /* Frameworks */,
@@ -249,6 +267,7 @@
 		2CA05FB8195D78CC007324D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CC486FF1965011C00194EF5 /* libsqlite3.dylib */,
 				2CA05FF3195D7922007324D8 /* libBusinessLogicLayer.a */,
 				2CA05FB9195D78CC007324D8 /* Foundation.framework */,
 				2CA05FBB195D78CC007324D8 /* CoreGraphics.framework */,
@@ -273,6 +292,12 @@
 				2C743AD91963DE9D002BA508 /* EventsDetailViewController.m */,
 				2C743CE01963EF84002BA508 /* Main_iPad.storyboard */,
 				2C743CE21963EF84002BA508 /* Main_iPhone.storyboard */,
+				2CC486F61964F56300194EF5 /* ScheduleViewController.h */,
+				2CC486F71964F56300194EF5 /* ScheduleViewController.m */,
+				2CC486F91964FA5D00194EF5 /* CountDownViewController.h */,
+				2CC486FA1964FA5D00194EF5 /* CountDownViewController.m */,
+				2CC486FC1964FF9400194EF5 /* AboutViewController.h */,
+				2CC486FD1964FF9400194EF5 /* AboutViewController.m */,
 				2CA05FD4195D78CC007324D8 /* Images.xcassets */,
 				2CA05FC0195D78CC007324D8 /* Supporting Files */,
 			);
@@ -385,6 +410,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC4871819650B6000194EF5 /* create_load.sql in Resources */,
+				2CC4871919650B6000194EF5 /* DBConfig.plist in Resources */,
 				2C743CCD1963EA50002BA508 /* rugby.gif in Resources */,
 				2C743CCA1963EA50002BA508 /* judo.gif in Resources */,
 				2C743CD41963EA50002BA508 /* tennis.gif in Resources */,
@@ -449,11 +476,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC486FE1964FF9400194EF5 /* AboutViewController.m in Sources */,
 				2C743ADA1963DE9D002BA508 /* EventsDetailViewController.m in Sources */,
 				2C743ADD1963DEDE002BA508 /* EventsViewController.m in Sources */,
 				2CA05FCA195D78CC007324D8 /* AppDelegate.m in Sources */,
 				2C743AD71963DE75002BA508 /* EventsViewCell.m in Sources */,
+				2CC486FB1964FA5D00194EF5 /* CountDownViewController.m in Sources */,
 				2CA05FC6195D78CC007324D8 /* main.m in Sources */,
+				2CC486F81964F56300194EF5 /* ScheduleViewController.m in Sources */,
 				2C743AD11963D94C002BA508 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

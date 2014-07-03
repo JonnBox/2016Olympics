@@ -81,8 +81,8 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath * indexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
         Events * event = [self.events objectAtIndex:(indexPath.section * COL_COUNT + indexPath.row)];
-        EventsDetailViewController_iPad * detailVC = [segue destinationViewController];
-        detailVC.events = event;
+        EventsDetailViewController * detailVC = [segue destinationViewController];
+        detailVC.event = event;
     }
 }
 

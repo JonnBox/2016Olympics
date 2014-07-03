@@ -1,18 +1,18 @@
 //
-//  EventsDetailViewController.m
+//  AboutViewController.m
 //  2016Olympics
 //
-//  Created by 李振 on 14-7-2.
+//  Created by 李振 on 14-7-3.
 //  Copyright (c) 2014年 Lee Zhen. All rights reserved.
 //
 
-#import "EventsDetailViewController.h"
+#import "AboutViewController.h"
 
-@interface EventsDetailViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation EventsDetailViewController
+@implementation AboutViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,18 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.imgEventIcon.image = [UIImage imageNamed:self.event.EventIcon];
-    
-    self.lblEventName.text = self.event.EventName;
-    self.txtViewBasicsInfo.text = self.event.BasicsInfo;
-    self.txtViewKeyInfo.text = self.event.KeyInfo;
-    self.txtViewOlympicInfo.text = self.event.OlympicInfo;
-    
-    self.scrollView.frame = self.view.frame;
-    self.scrollView.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0);  // top, left, bottom, right;
-    
-    self.scrollView.contentSize = CGSizeMake(320, 900);
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

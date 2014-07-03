@@ -23,6 +23,8 @@
 		2CA05F9C195D787B007324D8 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F84195D787B007324D8 /* libBusinessLogicLayer.a */; };
 		2CA05FA2195D787B007324D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA05FA0195D787B007324D8 /* InfoPlist.strings */; };
 		2CA05FF2195D7909007324D8 /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */; };
+		2CC4871419650B3B00194EF5 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4871219650B3B00194EF5 /* create_load.sql */; };
+		2CC4871519650B3B00194EF5 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4871319650B3B00194EF5 /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		2CA05F9F195D787B007324D8 /* BusinessLogicLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusinessLogicLayerTests-Info.plist"; sourceTree = "<group>"; };
 		2CA05FA1195D787B007324D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../PersistenceLayer/build/Debug-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
+		2CC4871219650B3B00194EF5 /* create_load.sql */ = {isa = PBXFileReference; lastKnownFileType = text; name = create_load.sql; path = ../DBFile/create_load.sql; sourceTree = "<group>"; };
+		2CC4871319650B3B00194EF5 /* DBConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DBConfig.plist; path = ../DBFile/DBConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		2CA05F7B195D787B007324D8 = {
 			isa = PBXGroup;
 			children = (
+				2CC4871219650B3B00194EF5 /* create_load.sql */,
+				2CC4871319650B3B00194EF5 /* DBConfig.plist */,
 				2CA05F89195D787B007324D8 /* BusinessLogicLayer */,
 				2CA05F9D195D787B007324D8 /* BusinessLogicLayerTests */,
 				2CA05F86195D787B007324D8 /* Frameworks */,
@@ -244,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC4871419650B3B00194EF5 /* create_load.sql in Resources */,
+				2CC4871519650B3B00194EF5 /* DBConfig.plist in Resources */,
 				2CA05FA2195D787B007324D8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -79,7 +79,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Count Down" image="CountDown-TabBarIcon" id="P6r-rY-5VE"/>
                     <connections>
-                        <outlet property="lblCountDown" destination="IS7-6m-eya" id="VNZ-Hu-FVK"/>
+                        <outlet property="lblCountDown" destination="IS7-6m-eya" id="cvH-ai-7eX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWP-lI-d5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -365,7 +365,7 @@
                     <connections>
                         <outlet property="imgEventIcon" destination="iry-yE-m0z" id="6fa-Aq-S87"/>
                         <outlet property="lblEventName" destination="Gka-JB-zI7" id="2Bb-E7-eEw"/>
-                        <outlet property="scrollView" destination="7FV-IH-b7Y" id="JfS-SB-gVW"/>
+                        <outlet property="scrollView" destination="7FV-IH-b7Y" id="WTe-k1-8nU"/>
                         <outlet property="txtViewBasicsInfo" destination="Nme-fG-uNH" id="xCf-JZ-YMf"/>
                         <outlet property="txtViewKeyInfo" destination="Zyb-qn-eXo" id="Az0-D1-oNm"/>
                         <outlet property="txtViewOlympicInfo" destination="git-UR-H0w" id="cRF-EW-a1T"/>

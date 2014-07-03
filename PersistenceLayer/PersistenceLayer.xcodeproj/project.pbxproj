@@ -29,14 +29,14 @@
 		2CA06082195DB2A9007324D8 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06081195DB2A9007324D8 /* Events.m */; };
 		2CA06085195DB3BB007324D8 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06084195DB3BB007324D8 /* Schedule.m */; };
 		2CA06088195DBA37007324D8 /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06087195DBA37007324D8 /* EventsDAO.m */; };
-		2CA0608C195DBC1E007324D8 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0608A195DBC1E007324D8 /* create_load.sql */; };
-		2CA0608D195DBC1E007324D8 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CA0608B195DBC1E007324D8 /* DBConfig.plist */; };
 		2CA0608F195DBCC9007324D8 /* EventsDAOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA0608E195DBCC9007324D8 /* EventsDAOTests.m */; };
 		2CA06091195DBFBD007324D8 /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA06080195DB2A9007324D8 /* Events.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CA06092195DBFBD007324D8 /* EventsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA06086195DBA37007324D8 /* EventsDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CA06093195DBFBD007324D8 /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA06083195DB3BB007324D8 /* Schedule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CA06096195DC48D007324D8 /* DBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA06094195DC48D007324D8 /* DBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CA06097195DC48D007324D8 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA06095195DC48D007324D8 /* DBHelper.m */; };
+		2CC4871019650B1700194EF5 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4870E19650B1700194EF5 /* create_load.sql */; };
+		2CC4871119650B1700194EF5 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4870F19650B1700194EF5 /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +81,12 @@
 		2CA06084195DB3BB007324D8 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		2CA06086195DBA37007324D8 /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAO.h; sourceTree = "<group>"; };
 		2CA06087195DBA37007324D8 /* EventsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAO.m; sourceTree = "<group>"; };
-		2CA0608A195DBC1E007324D8 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
-		2CA0608B195DBC1E007324D8 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
 		2CA0608E195DBCC9007324D8 /* EventsDAOTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAOTests.m; sourceTree = "<group>"; };
 		2CA06094195DC48D007324D8 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
 		2CA06095195DC48D007324D8 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
 		2CA06098195DC4B1007324D8 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2CC4870E19650B1700194EF5 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		2CC4870F19650B1700194EF5 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 		2CA05F49195D783C007324D8 = {
 			isa = PBXGroup;
 			children = (
-				2CA06089195DBC1E007324D8 /* DBFile */,
+				2CC4870D19650B1700194EF5 /* DBFile */,
 				2CA05F57195D783C007324D8 /* PersistenceLayer */,
 				2CA05F6B195D783D007324D8 /* PersistenceLayerTests */,
 				2CA05F54195D783C007324D8 /* Frameworks */,
@@ -192,14 +192,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2CA06089195DBC1E007324D8 /* DBFile */ = {
+		2CC4870D19650B1700194EF5 /* DBFile */ = {
 			isa = PBXGroup;
 			children = (
-				2CA0608A195DBC1E007324D8 /* create_load.sql */,
-				2CA0608B195DBC1E007324D8 /* DBConfig.plist */,
+				2CC4870E19650B1700194EF5 /* create_load.sql */,
+				2CC4870F19650B1700194EF5 /* DBConfig.plist */,
 			);
 			name = DBFile;
-			path = ../../two/code/ch24/2016Olympics/DBFile;
+			path = ../DBFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA0608C195DBC1E007324D8 /* create_load.sql in Resources */,
-				2CA0608D195DBC1E007324D8 /* DBConfig.plist in Resources */,
+				2CC4871019650B1700194EF5 /* create_load.sql in Resources */,
+				2CC4871119650B1700194EF5 /* DBConfig.plist in Resources */,
 				2CA05F70195D783D007324D8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) Events * event;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property (weak, nonatomic) IBOutlet UILabel *lblEventName;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgEventIcon;
