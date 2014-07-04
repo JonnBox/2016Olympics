@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBHelper.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0D92151966529B0060220A /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CE825C81965D128005FF063 /* create_load.sql */; };
+		2C0D92161966529B0060220A /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE825C91965D128005FF063 /* DBConfig.plist */; };
 		2C46DD861962723000AE095A /* EventsBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD851962723000AE095A /* EventsBLTests.m */; };
 		2C46DD881962726000AE095A /* ScheduleBLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD871962726000AE095A /* ScheduleBLTests.m */; };
 		2C46DD8B1962728C00AE095A /* EventsBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C46DD8A1962728C00AE095A /* EventsBL.m */; };
@@ -23,8 +25,8 @@
 		2CA05F9C195D787B007324D8 /* libBusinessLogicLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05F84195D787B007324D8 /* libBusinessLogicLayer.a */; };
 		2CA05FA2195D787B007324D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2CA05FA0195D787B007324D8 /* InfoPlist.strings */; };
 		2CA05FF2195D7909007324D8 /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */; };
-		2CC4871419650B3B00194EF5 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4871219650B3B00194EF5 /* create_load.sql */; };
-		2CC4871519650B3B00194EF5 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CC4871319650B3B00194EF5 /* DBConfig.plist */; };
+		2CE825CA1965D153005FF063 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 2CE825C81965D128005FF063 /* create_load.sql */; };
+		2CE825CB1965D153005FF063 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE825C91965D128005FF063 /* DBConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +68,8 @@
 		2CA05F9F195D787B007324D8 /* BusinessLogicLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusinessLogicLayerTests-Info.plist"; sourceTree = "<group>"; };
 		2CA05FA1195D787B007324D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2CA05FF1195D7909007324D8 /* libPersistenceLayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPersistenceLayer.a; path = "../PersistenceLayer/build/Debug-iphoneos/libPersistenceLayer.a"; sourceTree = "<group>"; };
-		2CC4871219650B3B00194EF5 /* create_load.sql */ = {isa = PBXFileReference; lastKnownFileType = text; name = create_load.sql; path = ../DBFile/create_load.sql; sourceTree = "<group>"; };
-		2CC4871319650B3B00194EF5 /* DBConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DBConfig.plist; path = ../DBFile/DBConfig.plist; sourceTree = "<group>"; };
+		2CE825C81965D128005FF063 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		2CE825C91965D128005FF063 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,7 @@
 		2CA05F7B195D787B007324D8 = {
 			isa = PBXGroup;
 			children = (
-				2CC4871219650B3B00194EF5 /* create_load.sql */,
-				2CC4871319650B3B00194EF5 /* DBConfig.plist */,
+				2CE825C71965D128005FF063 /* DBFile */,
 				2CA05F89195D787B007324D8 /* BusinessLogicLayer */,
 				2CA05F9D195D787B007324D8 /* BusinessLogicLayerTests */,
 				2CA05F86195D787B007324D8 /* Frameworks */,
@@ -167,6 +168,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2CE825C71965D128005FF063 /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				2CE825C81965D128005FF063 /* create_load.sql */,
+				2CE825C91965D128005FF063 /* DBConfig.plist */,
+			);
+			name = DBFile;
+			path = ../DBFile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -190,6 +201,7 @@
 				2CA05F81195D787B007324D8 /* Frameworks */,
 				2CA05F82195D787B007324D8 /* CopyFiles */,
 				2C46DD921962760A00AE095A /* Headers */,
+				2C0D9214196652930060220A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -246,12 +258,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C0D9214196652930060220A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0D92151966529B0060220A /* create_load.sql in Resources */,
+				2C0D92161966529B0060220A /* DBConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CA05F92195D787B007324D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC4871419650B3B00194EF5 /* create_load.sql in Resources */,
-				2CC4871519650B3B00194EF5 /* DBConfig.plist in Resources */,
+				2CE825CA1965D153005FF063 /* create_load.sql in Resources */,
+				2CE825CB1965D153005FF063 /* DBConfig.plist in Resources */,
 				2CA05FA2195D787B007324D8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
